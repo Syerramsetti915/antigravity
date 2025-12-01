@@ -1,4 +1,4 @@
-# Image Analysis with Vertex AI
+# Image Analysis with AI
 
 A web application that uses Google Cloud Vertex AI to analyze images with customizable system instructions. This project features:
 
