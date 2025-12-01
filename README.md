@@ -9,8 +9,6 @@ A web application that uses Google Cloud Vertex AI to analyze images with custom
 
 ## Architecture
 
-![Architecture Overview](./architecture.png)
-
 - **Frontend**: React with Chakra UI for styling
 - **Backend**: FastAPI (Python)
 - **ML Engine**: Google Cloud Vertex AI (Gemini Pro Vision)
