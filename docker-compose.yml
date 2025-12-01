@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    ports:
+      - "7001:7001"
+    env_file:
+      - .env
+    volumes:
+      - ./:/app
+    environment:
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "7002:7000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    environment:
+      - REACT_APP_API_URL=http://localhost:7001
+      - PORT=7000
+    depends_on:
+      - backend
