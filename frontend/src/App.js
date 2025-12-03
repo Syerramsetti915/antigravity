@@ -593,7 +593,7 @@ function App() {
                     UMES EXTENSION
                   </Heading>
                   <Text fontSize="xs" fontWeight="bold" color="gray.500" letterSpacing="widest">
-                    BOTANICAL AI ASSISTANT
+                    AI ASSISTANT
                   </Text>
                 </VStack>
               </HStack>
